@@ -11,9 +11,9 @@ origin = 'C:/Users/ionut/Desktop/programare/sync directory/source/'
 target = 'C:/Users/ionut/Desktop/programare/sync directory/replica/'
 
 
-for file_name in os.listdir(origin):
-    if os.path.isfile((file_name)):
-        shutil.copy2(src=origin+file_name, dst=target+file_name)
-        print(f"{file_name} succesfully synced!" )
+for file in os.listdir(origin):
+    if os.path.isfile((file)):
+        shutil.copy2(src=origin+file, dst=target+file)
+        print(f"{file} succesfully synced!" )
 
 
