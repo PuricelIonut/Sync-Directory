@@ -2,7 +2,6 @@ import os
 import argparse
 import shutil
 
-from pathlib import Path
 from sys import argv
 
 parser = argparse.ArgumentParser(description="Sync two directories")
@@ -15,8 +14,8 @@ target = 'C:/Users/ionut/Desktop/programare/sync directory/replica/'
 def copy_files():
     print('Sync in progress...')
     for file in os.listdir(origin):
-        if os.path.isdir(file) and not Path(target+file).exists():
-            Path(target+file).mkdir(parents=True, exist_ok=True)
+        if os.path.isdir(origin+file) and not os.path.exists(target+file):
+            os.mkdir(target+file)
             print('Creating directory:'+target+file)
         elif os.path.isfile(origin+file) and file in os.listdir(target) and os.path.getmtime(origin+file) != os.path.getmtime(target+file):
             shutil.copy2(src=origin+file, dst=target+file)
