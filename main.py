@@ -15,12 +15,13 @@ target = 'C:/Users/ionut/Desktop/programare/sync directory/replica/'
 def copy_files():
     print('Sync in progress...')
     for file in os.listdir(origin):
-        if os.path.isdir(file):
+        if os.path.isdir(file) and not Path(target+file).exists():
             Path(target+file).mkdir(parents=True, exist_ok=True)
-        elif file in os.listdir(target) and os.path.getmtime(origin+file) != os.path.getmtime(target+file):
+            print('Creating directory:'+target+file)
+        elif os.path.isfile(origin+file) and file in os.listdir(target) and os.path.getmtime(origin+file) != os.path.getmtime(target+file):
             shutil.copy2(src=origin+file, dst=target+file)
             print('Syncing: '+origin+file)
-        elif file not in os.listdir(target):
+        elif os.path.isfile(origin+file) and file not in os.listdir(target):
             shutil.copy2(src=origin+file, dst=target+file)
             print('Creating file: '+target+file)
     remove_files()
@@ -31,8 +32,12 @@ def remove_files():
     source, replica = get_files()
     for f in replica:
         if f not in source:
-            os.remove(target + f)
-            print('Removing: ' + target + f)
+            if os.path.isdir(f):
+                shutil.rmtree(target+f)
+                print('Removing directory: '+target+f)
+            else:
+                os.remove(target + f)
+                print('Removing: ' + target + f)
 
 
 def get_files():
