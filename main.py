@@ -11,39 +11,52 @@ origin = 'C:/Users/ionut/Desktop/programare/sync directory/source/'
 target = 'C:/Users/ionut/Desktop/programare/sync directory/replica/'
 
 
-def copy_files():
+def sync_files():
     print('Sync in progress...')
-    for file in os.listdir(origin):
-        if os.path.isdir(origin+file) and not os.path.exists(target+file):
-            os.mkdir(target+file)
-            print('Creating directory:'+target+file)
-        elif os.path.isfile(origin+file) and file in os.listdir(target) and os.path.getmtime(origin+file) != os.path.getmtime(target+file):
-            shutil.copy2(src=origin+file, dst=target+file)
-            print('Syncing: '+origin+file)
-        elif os.path.isfile(origin+file) and file not in os.listdir(target):
-            shutil.copy2(src=origin+file, dst=target+file)
-            print('Creating file: '+target+file)
+    source_files, replica_files = get_files()
+    for i in get_directories():
+        if not os.path.exists(i):
+            os.mkdir(i)
+            print('Created directory: '+i)
+    for s, r in zip(source_files, replica_files):
+        if not os.path.exists(r) or os.path.getmtime(s) != os.path.getmtime(r):
+            shutil.copy2(src=s, dst=r)
+            print('Creating file: '+r)
     remove_files()
     print('Sync completed!')
 
-
+# FILES NOT IN SOURCE SO CANT COMPARE
 def remove_files():
-    source, replica = get_files()
-    for f in replica:
-        if f not in source:
-            if os.path.isdir(f):
-                shutil.rmtree(target+f)
-                print('Removing directory: '+target+f)
+    source_files, replica_files = get_files()
+    for s, r in zip(source_files, replica_files):
+        if not os.path.exists(s):
+            if os.path.isdir(r):
+                shutil.rmtree(r)
+                print('Removing directory: '+r)
             else:
-                os.remove(target + f)
-                print('Removing: ' + target + f)
+                os.remove(r)
+                print('Removing file: '+r)
 
 
-def get_files():
-    source = os.listdir(origin)
-    replica = os.listdir(target)
-    return source, replica
+def get_files(path):
+    files = []
+    for p in os.walk(path):
+        for file in os.listdir(p[0]):
+            if not os.path.isdir(p[0]+'/'+file):
+                files.append(p[0]+'/'+file)
+    return files
 
-copy_files()
 
-#  os.path.getmtime(path)¶ ( get date when last modified )
+def get_directories(path):
+    directories = []
+    for f in os.walk(origin):
+        directories.append(f[0])
+    return directories
+
+
+def replace_data():
+    directories = [x.replace(os.path.basename(os.path.dirname(origin)), os.path.basename(os.path.dirname(target))) for x in get_directories(origin) ]
+    files = [x.replace(os.path.basename(os.path.dirname(origin)), os.path.basename(os.path.dirname(target))) for x in get_files(origin) ]
+    return directories, files
+
+
