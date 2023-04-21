@@ -12,32 +12,33 @@ target = 'C:/Users/ionut/OneDrive/Desktop/programare/learning/sync directory/rep
 
 
 # Sync target to match src
-def start_sync():
+def start_sync(path_origin, path_target):
     print('Sync in progress...')
-    directories, files = replace_data(origin, target)
+    directories, files = replace_data(path_origin, path_target)
     for i in directories:
         if not os.path.exists(i):
             os.mkdir(i)
-            print('Creating directory: '+i)
-    for j, k in zip(files, get_files(origin)):
+            print('Creating directory: '+os.path.normpath(i))
+    for j, k in zip(files, get_files(path_origin)):
         if not os.path.exists(j) or os.path.getmtime(j) != os.path.getmtime(k):
             shutil.copy2(dst=j, src=k)
-            print('Copying file: '+j)
-    remove_files()
+            print('Copying file: '+os.path.normpath(j))
+    remove_files(path_origin=path_origin, path_target=path_target)
     print('Sync completed!')
 
 
 # Remove files and dirs to match src
-def remove_files():
-    directories, files = replace_data(origin, target)
-    for i in get_files(target):
+def remove_files(path_origin, path_target):
+    directories, files = replace_data(path_origin, path_target)
+    for i in get_files(path_target):
         if i not in files:
             os.remove(i)
-            print('Deleting file: '+i)
-    for j in get_directories(target):
+            print('Deleting file: '+os.path.normpath(i))
+    for j in get_directories(path_target):
         if j not in directories:
             os.rmdir(j)
-            print('Deleting directory: '+j)
+            print('Deleting directory: '+os.path.normpath(j))
+
 
 # Get all files in every subdir inside given path
 def get_files(path):
@@ -61,9 +62,13 @@ def get_directories(path):
 def replace_data(path_origin, path_target):
     if not os.path.exists(path_target):
         os.mkdir(path_target)
-    directories = [x.replace(os.path.basename(path_origin), os.path.basename(path_target)) for x in get_directories(origin) ]
-    files = [x.replace(os.path.basename(path_origin), os.path.basename(path_target)) for x in get_files(origin) ]
+
+    # Replace dir name 
+    directories = [x.replace(os.path.basename(path_origin), os.path.basename(path_target)) for x in get_directories(path_origin) ]
+    files = [x.replace(os.path.basename(path_origin), os.path.basename(path_target)) for x in get_files(path_origin) ]
     return directories, files
+    
+
+start_sync(path_origin=origin, path_target=target)
 
 
-start_sync()
