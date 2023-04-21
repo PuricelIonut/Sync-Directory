@@ -29,8 +29,15 @@ def start_sync():
 
 # Remove files and dirs to match src
 def remove_files():
-    ...
-
+    directories, files = replace_data(origin, target)
+    for i in get_files(target):
+        if i not in files:
+            os.remove(i)
+            print('Deleting file: '+i)
+    for j in get_directories(target):
+        if j not in directories:
+            os.rmdir(j)
+            print('Deleting directory: '+j)
 
 # Get all files in every subdir inside given path
 def get_files(path):
@@ -59,3 +66,4 @@ def replace_data(path_origin, path_target):
     return directories, files
 
 
+start_sync()
