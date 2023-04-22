@@ -7,22 +7,15 @@ from sys import argv
 parser = argparse.ArgumentParser(description="Sync two directories")
 
 
-origin = "C:/Users/ionut/OneDrive/Desktop/programare/learning/sync directory/source"
-target = "C:/Users/ionut/OneDrive/Desktop/programare/learning/sync directory/replica"
+origin = "C:/Users/ionut/Desktop/programare/sync directory/source"
+target = "C:/Users/ionut/Desktop/programare/sync directory/replica"
 
 
-<<<<<<< HEAD
-def sync_files():
-    print('Sync in progress...')
-    files, directories = replace_data()
-    for i in get_directories():
-=======
 # Sync target to match src
 def start_sync(source, replica):
     print("Sync in progress...")
     directories, files = replace_data(source, replica)
     for i in directories:
->>>>>>> 8d1fcf899b6f6f95f3c6e76a2784bc80466e4e47
         if not os.path.exists(i):
             os.mkdir(i)
             print("Creating directory: " + os.path.normpath(i))
@@ -41,11 +34,18 @@ def remove_files(source, replica):
         if i not in files:
             os.remove(i)
             print("Deleting file: " + os.path.normpath(i))
-    for j in get_directories(replica):
-        if j not in directories:
-            os.rmdir(j)
-            print("Deleting directory: " + os.path.normpath(j))
-
+    
+    while len(get_directories(origin)) != len(get_directories(replica)):
+        for j in get_directories(replica):
+            if j not in directories:
+                try:
+                    os.rmdir(j)
+                    print("Deleting directory: " + os.path.normpath(j))
+                    break
+                except OSError:
+                    continue
+   
+        
 
 # Get all files in every subdir inside given path
 def get_files(path):
@@ -76,5 +76,4 @@ def replace_data(source, replica):
         for x in get_files(source)
     ]
 
-
-start_sync(source=origin, replica=target)
+start_sync(origin, target)
