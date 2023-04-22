@@ -9,6 +9,7 @@ parser = argparse.ArgumentParser(description="Sync two directories")
 
 origin = "C:/Users/ionut/Desktop/programare/sync directory/source"
 target = "C:/Users/ionut/Desktop/programare/sync directory/replica"
+logs = "C:/Users/ionut/Desktop/programare/sync directory/logs"
 
 
 # Sync target to match src
@@ -36,12 +37,11 @@ def remove_files(source, replica):
             print("Deleting file: " + os.path.normpath(i))
     
     while len(get_directories(origin)) != len(get_directories(replica)):
-        for j in get_directories(replica):
+        for j in reversed(get_directories(replica)):
             if j not in directories:
                 try:
                     os.rmdir(j)
                     print("Deleting directory: " + os.path.normpath(j))
-                    break
                 except OSError:
                     continue
    
@@ -75,5 +75,10 @@ def replace_data(source, replica):
         x.replace(os.path.basename(source), os.path.basename(replica))
         for x in get_files(source)
     ]
+
+
+
+def logs():
+    ...
 
 start_sync(origin, target)
