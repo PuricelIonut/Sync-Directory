@@ -13,7 +13,7 @@ target = 'C:/Users/ionut/Desktop/programare/sync directory/replica/'
 
 def sync_files():
     print('Sync in progress...')
-    source_files, replica_files = get_files()
+    files, directories = replace_data()
     for i in get_directories():
         if not os.path.exists(i):
             os.mkdir(i)
