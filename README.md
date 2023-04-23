@@ -9,3 +9,5 @@
     - Replica directory path: '-r --replica'
     - Logs directory path: '-l --logs'
     - Time to wait before starting to sync: '-t --time'
+
+    Source, replica and logs are required but if time is omitted the script will run instantly.
