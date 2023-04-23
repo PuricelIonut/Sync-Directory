@@ -1,252 +1,30 @@
----> Starting log at: 15:23:17 <---
+---> Starting log at: 15:52:59 <---
 
 
+
+Creating directory: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir
+
+Creating directory: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir\test dir 2
+
+Creating directory: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir 2
+
+Creating directory: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir 2\test dir 2
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test1.txt
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir\test1.txt
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir\test2.txt
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir\test dir 2\test1.txt
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir 2\test1.txt
+
+Copying file: C:\Users\ionut\Desktop\programare\sync directory\replica\test dir 2\test dir 2\test1.txt
 
 Sync complete!
 
 
 
----> Ending log at: 15:23:17 <---
-
----> Starting log at: 15:23:50 <---
-
-
-
-Sync complete!
-
-
-
----> Ending log at: 15:23:50 <---
-
----> Starting log at: 15:25:16 <---
-
-
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\chrome_elf.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\d3dcompiler_43.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\d3dcompiler_47.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\icudtl.dat
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\libcef.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\libEGL.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\libGLESv2.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\natives_blob.bin
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\snapshot_blob.bin
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\cef.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\cef_100_percent.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\cef_200_percent.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\cef_extensions.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\devtools_rereplicas.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\am.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ar.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\bg.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\bn.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ca.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\cs.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\da.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\de.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\el.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\en-GB.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\en-US.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\es-419.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\es.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\et.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\fa.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\fi.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\fil.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\fr.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\gu.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\he.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\hi.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\hr.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\hu.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\id.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\it.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ja.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\kn.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ko.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\lt.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\lv.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ml.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\mr.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ms.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\nb.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\nl.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\pl.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\pt-BR.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\pt-PT.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ro.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ru.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\sk.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\sl.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\sr.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\sv.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\sw.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\ta.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\te.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\th.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\tr.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\uk.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\vi.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\zh-CN.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales\zh-TW.pak
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\DbgHelp\dbghelp.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\NVIDIA\NVaftermath\Win64\GFSDK_Aftermath_Lib.x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\Ogg\Win64\VS2015\libogg_64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\ApexFramework_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\ApexFramework_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\APEX_Clothing_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\APEX_Clothing_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\APEX_Legacy_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\APEX_Legacy_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\NvCloth_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\NvCloth_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3Common_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3Common_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3Cooking_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3Cooking_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PhysX3_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PxFoundation_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PxFoundation_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PxPvdSDK_x64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015\PxPvdSDK_x64.pdb
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\Vorbis\Win64\VS2015\libvorbisfile_64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\Vorbis\Win64\VS2015\libvorbis_64.dll
-
-Deleting file: C:\Users\ionut\Desktop\programare\sync directory\replica\Windows\XAudio2_9\x64\xaudio2_9redist.dll
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Windows\XAudio2_9\x64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Windows\XAudio2_9
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Windows
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Vorbis\Win64\VS2015
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Vorbis\Win64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Vorbis
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64\VS2015
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3\Win64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\PhysX3
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Ogg\Win64\VS2015
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Ogg\Win64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\Ogg
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\NVIDIA\NVaftermath\Win64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\NVIDIA\NVaftermath
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\NVIDIA
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\DbgHelp
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas\locales
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64\Rereplicas
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3\Win64
-
-Deleting directory: C:\Users\ionut\Desktop\programare\sync directory\replica\CEF3
-
-Sync complete!
-
-
-
----> Ending log at: 15:25:16 <---
+---> Ending log at: 15:52:59 <---
 

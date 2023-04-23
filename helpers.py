@@ -8,10 +8,10 @@ import sys
 # Handle all command line logic
 def cl_handler():
     parser = argparse.ArgumentParser(description="Sync two directories")
-    parser.add_argument('-s', '--source', help='Path to source directory', required=True)
-    parser.add_argument('-r', '--replica', help='Path to replica directory', required=True)
-    parser.add_argument('-l', '--logs', help='Path to logs directory', required=True)
-    parser.add_argument('-t', '--time', help='Time interval for syncing, in minutes')
+    parser.add_argument('-s', '--source',type=str, help='Path to source directory', required=True)
+    parser.add_argument('-r', '--replica',type=str, help='Path to replica directory', required=True)
+    parser.add_argument('-l', '--logs',type=str, help='Path to logs directory', required=True)
+    parser.add_argument('-t', '--time', type=int, help='Time interval for syncing, in minutes')
 
     if len(sys.argv) < 2:
        parser.print_help()

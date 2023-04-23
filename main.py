@@ -9,10 +9,11 @@ def main():
     source = args['source']
     replica = args['replica']
     logs = args['logs']
+    time = args['time']
 
 
     if not os.path.exists(source):
-        raise Warning('Invalid source path!')
+        raise FileNotFoundError()
     elif os.path.exists(source) and os.path.isfile(source):
         raise Warning('Given source path leads to a file!')
 
@@ -27,8 +28,7 @@ def main():
     elif os.path.exists(logs) and os.path.isfile(logs):
         raise Warning('Given logs path leads to a file!')
     
-
     start_sync(source, replica)
-
+   
 
 main()
