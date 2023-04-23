@@ -1,4 +1,6 @@
 import os
+import time
+import datetime
 
 from helpers import *
 
@@ -9,7 +11,7 @@ def main():
     source = args['source']
     replica = args['replica']
     logs = args['logs']
-    time = args['time']
+    time_to_wait = args['time']
 
 
     if not os.path.exists(source):
@@ -28,7 +30,18 @@ def main():
     elif os.path.exists(logs) and os.path.isfile(logs):
         raise Warning('Given logs path leads to a file!')
     
-    start_sync(source, replica)
-   
+    if time_to_wait is None:
+        start_sync(source, replica)
+    else:
+        try:
+            while True:
+                current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                sync_time = datetime.datetime.now() + datetime.timedelta(minutes=time_to_wait)
+                print('--> Current time: ', current_time)
+                print(f'--> Starting sync at: {sync_time.strftime("%Y-%m-%d %H:%M:%S")}')
+                time.sleep(time_to_wait*60)
+                start_sync(source, replica)
+        except KeyboardInterrupt:
+            print('Ended by keyboard interrupt.')
 
 main()

@@ -8,9 +8,9 @@ import sys
 # Handle all command line logic
 def cl_handler():
     parser = argparse.ArgumentParser(description="Sync two directories")
-    parser.add_argument('-s', '--source',type=str, help='Path to source directory', required=True)
-    parser.add_argument('-r', '--replica',type=str, help='Path to replica directory', required=True)
-    parser.add_argument('-l', '--logs',type=str, help='Path to logs directory', required=True)
+    parser.add_argument('-s', '--source',type=str, help='Path to source directory(required)', required=True)
+    parser.add_argument('-r', '--replica',type=str, help='Path to replica directory(required)', required=True)
+    parser.add_argument('-l', '--logs',type=str, help='Path to logs directory(required)', required=True)
     parser.add_argument('-t', '--time', type=int, help='Time interval for syncing, in minutes')
 
     if len(sys.argv) < 2:
@@ -24,7 +24,7 @@ logs = args['logs']
 
 # Sync target to match src
 def start_sync(source, replica):
-    print("Starting sync...")
+    print("Starting sync!")
     start_log('---> Starting log at: '+datetime.datetime.now().strftime("%H:%M:%S").__str__()+' <---'+'\n\n')
     directories, files = replace_data(source, replica)
     for i in directories:
@@ -36,7 +36,7 @@ def start_sync(source, replica):
             shutil.copy2(dst=j, src=k)
             print(start_log("Copying file: " + os.path.normpath(j)))
     remove_files(source, replica)
-    print(start_log("Sync complete!"))
+    print(start_log("Sync complete!\n"))
     start_log('\n\n'+'---> Ending log at: '+datetime.datetime.now().strftime("%H:%M:%S").__str__()+' <---')
 
 
