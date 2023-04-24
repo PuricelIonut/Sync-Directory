@@ -15,7 +15,7 @@ def main():
 
 
     if not os.path.exists(source):
-        raise FileNotFoundError()
+        raise FileNotFoundError('Source directory not found.')
     elif os.path.exists(source) and os.path.isfile(source):
         raise Warning('Given source path leads to a file!')
 
